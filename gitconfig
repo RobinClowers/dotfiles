@@ -1,0 +1,17 @@
+[user]
+	name = Robin Clowers
+  email = robin.clowers@gmail.com
+[merge]
+  tool = p4merge
+[diff]
+  tool = p4merge
+[push]
+  default = tracking
+[rerere]
+  enabled = true
+[alias]
+  ci = commit
+  co = checkout
+  pre = pull --rebase
+  st = status
+  m = merge --no-ff --no-commit
