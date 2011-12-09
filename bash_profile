@@ -51,4 +51,4 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 
-PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/robin/.rvm/bin:/Library/PostgreSQL/9.0/bin
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/robin/.rvm/bin:
