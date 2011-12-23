@@ -49,6 +49,7 @@ complete -o default -o nospace -F __git_flow_release release
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 
 
 PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/robin/.rvm/bin:
