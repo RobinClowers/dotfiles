@@ -5,6 +5,10 @@
   tool = p4merge
 [diff]
   tool = p4merge
+[color]
+  ui = auto
+[format]
+  pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
 [push]
   default = tracking
 [rerere]
@@ -15,3 +19,22 @@
   pre = pull --rebase
   st = status
   m = merge --no-ff --no-commit
+  di = diff
+  dc = diff --cached
+  amend = commit --amend
+  aa = add --all
+  head = !git l -1
+  h = !git head
+  r = !git l -20
+  ra = !git r --all
+  ff = merge --ff-only
+  pullff = pull --ff-only
+  noff = merge --no-ff
+  l = log --graph --abbrev-commit --date=relative
+  la = !git l --all
+  div = divergence
+  fa = fetch --all
+  pom = push origin master
+  b = branch
+  ds = diff --stat=160,120
+  dh1 = diff HEAD~1
