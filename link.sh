@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd $(cd $(dirname "$0") && pwd)
-
+SCRIPTDIR=$(cd $(dirname "$0") && pwd)
 SCRIPTNAME=$(basename $0)
 
+cd $SCRIPTDIR
 for FILE in *
 do
-  [ $FILE != $SCRIPTNAME ] && cp $FILE ~/.$FILE
+  [ $FILE != $SCRIPTNAME ] && ln -s $SCRIPTDIR/$FILE ~/.$FILE
 done
