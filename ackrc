@@ -1,2 +1,10 @@
---type-add=js=.coffee
---type-set=haml=.haml
+--smart-case
+--type-add=ruby=.haml,.feature
+--type-add=css=.sass,.scss
+--type-set=tags=tags
+--type-set=coffee=coffee
+--notags
+--ignore-dir=tmp
+--ignore-dir=.sass-cache
+--ignore-dir=log
+--ignore-dir=coverage
