@@ -52,4 +52,4 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 
 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::/usr/X11/bin:/Users/robin/.rvm/bin:
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin::/usr/X11/bin:/Users/robin/.rvm/bin:
