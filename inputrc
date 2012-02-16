@@ -1,0 +1,27 @@
+set editing-mode vi
+set keymap vi-insert
+
+set bell-style none
+
+# for hard to type file names
+Control-o: menu-complete
+
+# up and down context sensitive history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# home and end
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+$if term=rxvt*
+"\e[8~": end-of-line
+"\eOc": forward-word
+"\eOd": backward-word
