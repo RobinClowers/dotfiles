@@ -1,17 +1,5 @@
-alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
-alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
-
-# bash completion (homebrew style)
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
-# autojump
-if [ -f `brew --prefix`/etc/autojump ]; then
-    . `brew --prefix`/etc/autojump
-fi
-
 . ~/.bash_colors
+
 # git prompt goodnes
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
@@ -22,8 +10,6 @@ PS1="${COLOR_RED}[${COLOR_WHITE}\t ${COLOR_NONE}\W${COLOR_GREEN}\$(__git_ps1 ' (
 function name_tab() {
   echo -ne "\033]0;$1\007"
 }
-
-eval `hub alias -s bash`
 
 alias r='bundle exec rails'
 alias b='bundle exec'
@@ -51,14 +37,26 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 
-OS=`lowercase \`uname\``
-KERNEL=`uname -r`
-MACH=`uname -m`
-
-if [ "{$OS}" == "darwin" ]; then
+if [ `uname` == "Darwin" ]; then
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
   alias vi='mvim'
+  alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+  alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+
+  # bash completion (homebrew style)
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+
+  # autojump
+  if [ -f `brew --prefix`/etc/autojump ]; then
+      . `brew --prefix`/etc/autojump
+  fi
+
+  # https://github.com/defunkt/hub
+  eval `hub alias -s bash`
 else
+  source /etc/profile.d/autojump.bash
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
   alias vi='gvim'
 fi
