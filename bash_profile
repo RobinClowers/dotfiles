@@ -51,5 +51,14 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 
+OS=`lowercase \`uname\``
+KERNEL=`uname -r`
+MACH=`uname -m`
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin::/usr/X11/bin:/Users/robin/.rvm/bin:
+if [ "{$OS}" == "darwin" ]; then
+  PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
+  alias vi='mvim'
+else
+  PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+  alias vi='gvim'
+fi
