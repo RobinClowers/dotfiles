@@ -31,7 +31,6 @@ set -o vi
 
 export EDITOR='vim'
 export VISUAL='vim'
-export BUNDLER_EDITOR=/usr/local/bin/mvim
 
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
@@ -69,4 +68,7 @@ else
   source /etc/profile.d/autojump.bash
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
   alias vi='gvim'
+  alias ack='ack-grep'
 fi
+
+export BUNDLER_EDITOR=gvim
