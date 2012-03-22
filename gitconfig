@@ -1,3 +1,5 @@
+[core]
+  excludesfile = /Users/clowers/.gitignore_global
 [user]
 	name = Robin Clowers
   email = robin.clowers@gmail.com
