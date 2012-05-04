@@ -26,6 +26,9 @@ alias f='git flow feature'
 alias release='git flow release'
 alias mig='bundle exec rake db:migrate db:test:prepare'
 alias rk='bundle exec rake'
+alias ss='script/server'
+alias sc='script/console'
+alias sg='script/generate'
 
 set -o vi
 
