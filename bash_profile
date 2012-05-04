@@ -72,6 +72,5 @@ else
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
   alias vi='gvim'
   alias ack='ack-grep'
+  export BUNDLER_EDITOR=gvim
 fi
-
-export BUNDLER_EDITOR=gvim
