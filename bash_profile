@@ -51,7 +51,7 @@ if [ `uname` == "Darwin" ]; then
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
   alias vi='mvim'
   export EDITOR='mvim -v'
-  export VISUAL='mvim -v'
+  export VISUAL='mvim'
   alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
   alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 
