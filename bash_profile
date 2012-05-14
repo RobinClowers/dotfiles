@@ -50,6 +50,7 @@ complete -o default -o nospace -F __git_flow_release release
 if [ `uname` == "Darwin" ]; then
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
   alias vi='mvim'
+  alias vim='mvim -v'
   export EDITOR='mvim -v'
   export VISUAL='mvim'
   alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
