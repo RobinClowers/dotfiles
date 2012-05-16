@@ -8,3 +8,5 @@
 --ignore-dir=.sass-cache
 --ignore-dir=log
 --ignore-dir=coverage
+--ignore-dir=node_modules
+--ignore-dir=.jhw-cache
