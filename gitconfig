@@ -1,5 +1,6 @@
 [core]
   excludesfile = /Users/clowers/.gitignore_global
+	editor = vim
 [user]
 	name = Robin Clowers
   email = robin.clowers@gmail.com

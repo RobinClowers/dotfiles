@@ -53,6 +53,7 @@ if [ `uname` == "Darwin" ]; then
   alias vi='mvim'
   alias vim='mvim -v'
   export EDITOR='mvim -v'
+  export GIT_EDITOR='mvim -v'
   export VISUAL='mvim'
   alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
   alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
