@@ -10,3 +10,4 @@
 --ignore-dir=coverage
 --ignore-dir=node_modules
 --ignore-dir=.jhw-cache
+--ignore-dir=externals
