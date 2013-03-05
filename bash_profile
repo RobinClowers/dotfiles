@@ -67,8 +67,8 @@ if [ `uname` == "Darwin" ]; then
   fi
 
   # autojump
-  if [ -f `brew --prefix`/etc/autojump ]; then
-      . `brew --prefix`/etc/autojump
+  if [ -f `brew --prefix`/etc/autojump.sh ]; then
+      . `brew --prefix`/etc/autojump.sh
   fi
 
   # https://github.com/defunkt/hub
