@@ -29,6 +29,7 @@ alias rk='bundle exec rake'
 alias ss='script/server'
 alias sc='script/console'
 alias sg='script/generate'
+alias bi='bundle install --standalone --binstubs bundle/bin'
 
 set -o vi
 
