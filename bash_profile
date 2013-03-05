@@ -44,8 +44,11 @@ complete -o default -o nospace -F __git_flow_release release
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -s "$HOME/nvm/nvm.sh" ]] && source "$HOME/nvm/nvm.sh"
+
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
+[[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 
 if [ `uname` == "Darwin" ]; then
   PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
