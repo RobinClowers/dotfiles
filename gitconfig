@@ -1,5 +1,5 @@
 [core]
-  excludesfile = /Users/clowers/.gitignore_global
+  excludesfile = ~/.gitignore_global
 	editor = vim
 [user]
 	name = Robin Clowers
