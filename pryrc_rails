@@ -1,0 +1,24 @@
+require 'hirb'
+
+Pry.config.print = proc do |output, value|
+  Hirb::View.view_or_page_output(value) || Pry::DEFAULT_PRINT.call(output, value)
+end
+
+require 'logger'
+
+def loud_logger
+  enable_hirb
+  set_logger_to Logger.new(STDOUT)
+end
+
+def quiet_logger
+  disable_hirb
+  set_logger_to nil
+end
+
+def set_logger_to(logger)
+  ActiveRecord::Base.logger = logger
+  ActiveRecord::Base.clear_reloadable_connections!
+end
+
+Hirb.enable
