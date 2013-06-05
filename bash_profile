@@ -20,19 +20,6 @@ function name_tab() {
   echo -ne "\033]0;$1\007"
 }
 
-alias r='bundle exec rails'
-alias b='bundle exec'
-alias c='bundle exec cap'
-alias gs='bundle exec guard start'
-alias f='git flow feature'
-alias release='git flow release'
-alias mig='bundle exec rake db:migrate db:test:prepare'
-alias rk='bundle exec rake'
-alias ss='script/server'
-alias sc='script/console'
-alias sg='script/generate'
-alias bi='bundle install --standalone --binstubs bundle/bin'
-
 set -o vi
 
 export EDITOR='vim'
@@ -40,7 +27,6 @@ export VISUAL='vim'
 
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
-
 
 complete -o default -o nospace -F __git_flow_feature f
 complete -o default -o nospace -F __git_flow_release release
@@ -53,33 +39,23 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 
-if [ `uname` == "Darwin" ]; then
-  PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
-  alias vi='mvim'
-  alias vim='mvim -v'
-  export EDITOR='mvim -v'
-  export GIT_EDITOR='mvim -v'
-  export VISUAL='mvim'
-  alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
-  alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/.rvm/bin
 
-  # bash completion (homebrew style)
-  if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-  fi
+export EDITOR='mvim -v'
+export GIT_EDITOR='mvim -v'
+export VISUAL='mvim'
 
-  # autojump
-  if [ -f `brew --prefix`/etc/autojump.sh ]; then
-      . `brew --prefix`/etc/autojump.sh
-  fi
-
-  # https://github.com/defunkt/hub
-  eval `hub alias -s bash`
-
-else
-  source /etc/profile.d/autojump.bash
-  PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-  alias vi='gvim'
-  alias ack='ack-grep'
-  export BUNDLER_EDITOR=gvim
+# bash completion (homebrew style)
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
+
+# autojump
+if [ -f `brew --prefix`/etc/autojump.sh ]; then
+    . `brew --prefix`/etc/autojump.sh
+fi
+
+# https://github.com/defunkt/hub
+eval `hub alias -s bash`
+
+source ~/.bash_aliases
