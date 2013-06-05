@@ -16,6 +16,11 @@ alias r='rails'
 alias gs='guard --no-bundler-warning'
 alias mig='rk db:migrate db:test:prepare'
 
+# project specific
+alias mqi='script/mergeq integration'
+alias mqd='script/mergeq develop'
+alias mqc='script/mergeq --continue'
+
 # rails 2
 alias ss='script/server'
 alias sc='script/console'
