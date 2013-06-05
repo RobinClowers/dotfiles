@@ -1,3 +1,5 @@
+#!/bin/bash
+
 . ~/.bash_colors
 
 # git prompt goodnes
