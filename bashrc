@@ -34,6 +34,7 @@ complete -o default -o nospace -F __git_flow_release release
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" && nvm use default > /dev/null
 
@@ -41,7 +42,7 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/:/usr/local/rvm/bin
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/:/usr/local/rvm/bin:/Users/robin/.rvm
 
 export EDITOR='mvim -v'
 export GIT_EDITOR='mvim -v'
