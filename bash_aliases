@@ -7,7 +7,7 @@ alias vim='mvim'
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
 alias zb='`[ -e .zeus.sock ] && echo zeus || echo bundle exec`'
 alias zs='(bundle check > /dev/null || bi); zk; rm .zeus.sock; reset; zeus start'
-alias bi='bundle install --standalone --binstubs bundle/bin'
+alias bi='bundle install --binstubs bundle/bin'
 alias b='bundle exec'
 alias rk='zb rake'
 
