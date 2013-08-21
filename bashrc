@@ -20,8 +20,6 @@ function name_tab() {
   echo -ne "\033]0;$1\007"
 }
 
-set -o vi
-
 export EDITOR='vim'
 export VISUAL='vim'
 
