@@ -40,8 +40,6 @@ complete -o default -o nospace -F __git_flow_release release
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 
-PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/robin/:/usr/local/rvm/bin:/Users/robin/.rvm
-
 export EDITOR='mvim -v'
 export GIT_EDITOR='mvim -v'
 export VISUAL='mvim'
