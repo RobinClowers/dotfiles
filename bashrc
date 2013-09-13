@@ -30,6 +30,9 @@ complete -o default -o nospace -F __git_flow_feature f
 complete -o default -o nospace -F __git_flow_release release
 
 
+# set path for homebrew
+PATH=/usr/local/bin:$PATH
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
