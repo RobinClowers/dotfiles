@@ -1,8 +1,8 @@
 [core]
   excludesfile = ~/.gitignore_global
-	editor = vim
+  editor = vim
 [user]
-	name = Robin Clowers
+  name = Robin Clowers
   email = robin.clowers@gmail.com
 [merge]
   tool = p4merge
