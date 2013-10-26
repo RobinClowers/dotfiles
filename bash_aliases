@@ -1,7 +1,7 @@
 #!/bin/bash
 
 alias vi='mvim -v'
-alias vim='mvim'
+alias vim='mvim -v'
 
 # ruby
 alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
