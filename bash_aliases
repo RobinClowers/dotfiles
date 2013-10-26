@@ -21,11 +21,6 @@ alias mqi='script/mergeq integration'
 alias mqd='script/mergeq develop'
 alias mqc='script/mergeq --continue'
 
-# rails 2
-alias ss='script/server'
-alias sc='script/console'
-alias sg='script/generate'
-
 # pow
 alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
