@@ -22,4 +22,4 @@ class Object
 end
 
 # loading rails configuration if it is running as a rails console
-load File.dirname(__FILE__) + '/.pryrc_rails' if defined?(Rails) && Rails.env
+# load File.dirname(__FILE__) + '/.pryrc_rails' if defined?(Rails) && Rails.env
