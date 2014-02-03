@@ -52,7 +52,15 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-# https://github.com/defunkt/hub
-eval `hub alias -s bash`
+# fancy alias for git from: https://github.com/aaronjensen/dotfiles
+function g {
+  if [[ $# > 0 ]]; then
+    hub "$@"
+  else
+    git status -sb
+  fi
+}
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
+
 
 source ~/.bash_aliases
