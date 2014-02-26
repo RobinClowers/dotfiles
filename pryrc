@@ -1,4 +1,4 @@
-require 'pry-debugger'
+require 'pry-byebug'
 require 'pry-coolline'
 require 'pry-stack_explorer'
 
