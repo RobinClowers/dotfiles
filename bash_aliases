@@ -24,3 +24,7 @@ alias mqc='script/mergeq --continue'
 # pow
 alias start_pow="launchctl load $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
+
+# postgres
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop"
