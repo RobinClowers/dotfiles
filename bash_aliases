@@ -18,7 +18,7 @@ alias mig='rk db:migrate db:test:prepare'
 
 # project specific
 alias mqi='script/mergeq integration'
-alias mqd='script/mergeq develop'
+alias mqm='script/mergeq master'
 alias mqc='script/mergeq --continue'
 
 # pow
