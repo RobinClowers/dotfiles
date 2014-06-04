@@ -1,3 +1,4 @@
 --fail-fast
 --color
 --tty
+--profile
