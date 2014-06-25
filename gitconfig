@@ -25,7 +25,7 @@
   di = diff
   dc = diff --cached
   amend = commit --amend
-  aa = add --all
+  aa = add --all .
   head = !git l -1
   h = !git head
   r = !git l -20
