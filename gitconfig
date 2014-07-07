@@ -21,7 +21,7 @@
   co = checkout
   pre = pull --rebase
   st = status
-  m = merge --no-ff --no-commit
+  m = merge --no-ff
   di = diff
   dc = diff --cached
   amend = commit --amend
