@@ -33,6 +33,9 @@ complete -o default -o nospace -F __git_flow_release release
 # set path for homebrew
 PATH=/usr/local/bin:$PATH
 
+# add Heroku Toolbelt to path
+PATH=/usr/local/heroku/bin:$PATH
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" && nvm use default > /dev/null
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
