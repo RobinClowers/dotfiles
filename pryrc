@@ -1,12 +1,17 @@
-require 'pry-byebug'
-require 'pry-coolline'
-require 'pry-stack_explorer'
+# vim: set filetype ft=ruby
 
-Pry.config.prompt = [ proc { ">> " }, proc { ">? " } ]
-Pry.commands.alias_command 'c', 'continue'
-Pry.commands.alias_command 's', 'step'
-Pry.commands.alias_command 'n', 'next'
-Pry.commands.alias_command 'f', 'finish'
+begin
+  require 'pry-byebug'
+  require 'pry-coolline'
+  require 'pry-stack_explorer'
+
+  Pry.config.prompt = [ proc { ">> " }, proc { ">? " } ]
+  Pry.commands.alias_command 'c', 'continue'
+  Pry.commands.alias_command 's', 'step'
+  Pry.commands.alias_command 'n', 'next'
+  Pry.commands.alias_command 'f', 'finish'
+rescue LoadError
+end
 
 class Object
   def interesting_methods
