@@ -31,7 +31,7 @@ complete -o default -o nospace -F __git_flow_release release
 
 
 # set path for homebrew
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # add Heroku Toolbelt to path
 PATH=/usr/local/heroku/bin:$PATH
