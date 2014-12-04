@@ -14,7 +14,7 @@ alias rk='zb rake'
 # rails
 alias r='rails'
 alias gs='guard --no-bundler-warning'
-alias mig='rk db:migrate db:test:prepare'
+alias mig='rk db:migrate'
 
 # project specific
 alias mqi='script/mergeq integration'
