@@ -3,3 +3,8 @@
 /tags
 dist
 tmp
+vendor
+*.woff
+*.svg
+*.eot
+*.ttf
