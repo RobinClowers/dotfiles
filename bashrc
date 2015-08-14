@@ -65,6 +65,5 @@ function g {
 }
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
 
-/usr/bin/ssh-add -K ~/.ssh/id_rsa 2> /dev/null
 
 source ~/.bash_aliases
