@@ -8,3 +8,4 @@ vendor
 *.svg
 *.eot
 *.ttf
+public/fonts/
