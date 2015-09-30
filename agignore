@@ -9,3 +9,4 @@ vendor
 *.eot
 *.ttf
 public/fonts/
+log/
