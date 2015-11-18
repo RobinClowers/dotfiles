@@ -10,3 +10,5 @@ vendor
 *.ttf
 public/fonts/
 log/
+priv/static/
+fixture/
