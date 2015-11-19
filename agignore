@@ -8,6 +8,7 @@ vendor
 *.svg
 *.eot
 *.ttf
+*.min.js
 public/fonts/
 log/
 priv/static/
