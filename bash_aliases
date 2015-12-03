@@ -22,8 +22,8 @@ alias mqm='script/mergeq master'
 alias mqc='script/mergeq --continue'
 
 # postgres
-alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pg_stop="pg_ctl -D /usr/local/var/postgres stop"
+alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg_stop='pg_ctl -D /usr/local/var/postgres stop'
 
 # elixir
 alias st='script/test'
