@@ -42,3 +42,5 @@
   ds = diff --stat=160,120
   dh1 = diff HEAD~1
   sh = !git log --format=%B -n 1
+  ra = rebase --autosquash -i
+  fix = commit --fixup
