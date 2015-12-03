@@ -16,8 +16,8 @@ alias r='rails'
 alias gs='guard --no-bundler-warning'
 alias mig='rk db:migrate'
 
-# project specific
-alias mqi='script/mergeq integration'
+# mergeq
+alias mqe='script/mergeq edge'
 alias mqm='script/mergeq master'
 alias mqc='script/mergeq --continue'
 
