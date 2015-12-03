@@ -28,3 +28,7 @@ alias stop_pow="launchctl unload $HOME/Library/LaunchAgents/cx.pow.powd.plist"
 # postgres
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pg_stop="pg_ctl -D /usr/local/var/postgres stop"
+
+# elixir
+alias st='script/test'
+alias deps='mix do deps.get, compile'
