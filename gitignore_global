@@ -4,3 +4,4 @@
 .ruby-version
 .ruby-gemset
 .DS_Store
+.pair.yml
