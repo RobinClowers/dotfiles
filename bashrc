@@ -25,6 +25,7 @@ export VISUAL='vim'
 
 export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
 export RSPEC_FORMAT=Fuubar
+export GOPATH=$HOME
 
 complete -o default -o nospace -F __git_flow_feature f
 complete -o default -o nospace -F __git_flow_release release
@@ -35,6 +36,9 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # add Heroku Toolbelt to path
 PATH=/usr/local/heroku/bin:$PATH
+
+# add go bin to path
+PATH=$HOME/bin:$PATH
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" && nvm use default > /dev/null
