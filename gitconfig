@@ -8,6 +8,7 @@
   tool = p4merge
 [diff]
   tool = p4merge
+  compactionHeuristic = true
 [color]
   ui = auto
 [format]
