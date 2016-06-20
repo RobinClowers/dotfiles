@@ -45,6 +45,8 @@ PATH=$HOME/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -s "$HOME/.asdf/asdf.sh" ]] && source "$HOME/.asdf/asdf.sh"
+[[ -s "$HOME/.asdf/completions/asdf.bash" ]] && source "$HOME/.asdf/completions/asdf.bash"
 
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
