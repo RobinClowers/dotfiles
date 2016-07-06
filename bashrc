@@ -52,6 +52,9 @@ PATH=$HOME/bin:$PATH
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 
+# load direnv
+eval "$(direnv hook bash)"
+
 export EDITOR='mvim -v'
 export GIT_EDITOR='mvim -v'
 export VISUAL='mvim'
