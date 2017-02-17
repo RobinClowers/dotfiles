@@ -32,3 +32,6 @@ alias pg_stop='pg_ctl -D /usr/local/var/postgres stop'
 # elixir
 alias st='script/test'
 alias deps='mix do deps.get, compile'
+
+# Fix OSX
+alias timeout='gtimeout'
