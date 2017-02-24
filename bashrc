@@ -40,6 +40,9 @@ PATH=/usr/local/heroku/bin:$PATH
 # add go bin to path
 PATH=$HOME/bin:$PATH
 
+# add subscript to path
+PATH=$HOME/.subscript/bin:$PATH
+
 [[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh" && nvm use default > /dev/null
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
