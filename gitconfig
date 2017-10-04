@@ -44,3 +44,6 @@
   sh = !git log --format=%B -n 1
   ra = rebase --autosquash -i
   fix = commit --fixup
+  noskip = "!git skips | xargs git update-index --no-skip-worktree"
+  skip = update-index --skip-worktree
+  skips = "!git ls-files -v | awk '/^S/{ print $2 }'"
