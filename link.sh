@@ -10,4 +10,4 @@ do
 done
 
 # symlinks don't seem to work for this file
-cp misc/karabiner.json ~/.config/karabiner/
+cp -r config/karabiner/* ~/.config/karabiner/
