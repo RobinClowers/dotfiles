@@ -17,6 +17,3 @@ do
       echo "linked $SCRIPTDIR/$FILE to ~/.$FILE"
     fi
 done
-
-# symlinks don't seem to work for this file
-cp -r config/karabiner/* ~/.config/karabiner/
