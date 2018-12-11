@@ -4,16 +4,12 @@ alias vi='mvim -v'
 alias vim='mvim -v'
 
 # ruby
-alias z='`[ -e .zeus.sock ] && echo zeus || echo SAD: Zeus is not running 1>&2`'
-alias zb='`[ -e .zeus.sock ] && echo zeus || echo bundle exec`'
-alias zs='(bundle check > /dev/null || bi); zk; rm .zeus.sock; reset; zeus start'
 alias bi='bundle install'
 alias b='bundle exec'
-alias rk='zb rake'
+alias rk='b rake'
 
 # rails
-alias r='rails'
-alias gs='guard --no-bundler-warning'
+alias r='b rails'
 alias mig='rk db:migrate'
 
 # mergeq
