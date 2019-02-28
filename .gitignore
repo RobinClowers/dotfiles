@@ -1,3 +1,4 @@
 /config/configstore/update-notifier-npm.json
 /config/configstore/update-notifier-gatsby-cli.json
 config/karabiner/automatic_backups/*
+/config/direnv/allow
