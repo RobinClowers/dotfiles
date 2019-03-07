@@ -8,3 +8,6 @@
 .projectile
 .tern-port
 .ignore
+
+# For personal settings
+.envrc
