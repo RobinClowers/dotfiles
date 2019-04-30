@@ -63,7 +63,7 @@ export HISTFILESIZE=
 
 # add n, the node version manager
 export N_PREFIX="$HOME/n"
-PATH+=":$N_PREFIX/bin"
+PATH="$N_PREFIX/bin:$PATH"
 
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
