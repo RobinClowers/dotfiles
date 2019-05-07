@@ -2,5 +2,6 @@
 /config/configstore/update-notifier-gatsby-cli.json
 /config/configstore/update-notifier-nodemon.json
 /config/configstore/update-notifier-mrm.json
+/config/configstore/nodemon.json
 config/karabiner/automatic_backups/*
 /config/direnv/allow
