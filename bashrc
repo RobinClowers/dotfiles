@@ -91,5 +91,8 @@ function g {
 }
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
 
+function restore-vscode-extensions {
+  cat vscode-extensions.list | xargs -L 1 code --install-extension
+}
 
 source ~/.bash_aliases
