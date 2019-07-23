@@ -17,6 +17,8 @@
   default = upstream
 [rerere]
   enabled = true
+[url "ssh://git@git.sourceai.io/source/"]
+  insteadOf = https://git.sourceai.io/source/
 [alias]
   ci = commit
   co = checkout
