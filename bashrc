@@ -30,7 +30,6 @@ export GOPATH=$HOME
 complete -o default -o nospace -F __git_flow_feature f
 complete -o default -o nospace -F __git_flow_release release
 
-
 # set path for homebrew
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
@@ -46,6 +45,10 @@ PATH=$HOME/.subscript/bin:$PATH
 # add imagemagick6 to path
 PATH=/usr/local/opt/imagemagick@6/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
+
+# add gnu stuff to the path
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # avoid duplicates..
 export HISTCONTROL=ignoredups:erasedups
