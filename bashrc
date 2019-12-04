@@ -16,6 +16,9 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
+# Don't show macOS bash to zsh prompt
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 function name_tab() {
   echo -ne "\033]0;$1\007"
 }
