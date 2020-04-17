@@ -16,6 +16,9 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
+# increase node memory limit
+export NODE_OPTIONS=--max-old-space-size=4096
+
 # Don't show macOS bash to zsh prompt
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
