@@ -19,6 +19,7 @@ Control-o: menu-complete
 "\e\e[D": backward-word
 
 $if term=rxvt*
-"\e[8~": end-of-line
-"\eOc": forward-word
-"\eOd": backward-word
+  "\e[8~": end-of-line
+  "\eOc": forward-word
+  "\eOd": backward-word
+$endif
