@@ -81,9 +81,9 @@ PATH="$N_PREFIX/bin:$PATH"
 # load direnv
 eval "$(direnv hook bash)"
 
-export EDITOR='mvim -v'
-export GIT_EDITOR='mvim -v'
-export VISUAL='mvim'
+export EDITOR='nvim'
+export GIT_EDITOR='nvim'
+export VISUAL='nvim'
 
 # bash completion (homebrew style)
 if [ -f `brew --prefix`/etc/bash_completion ]; then

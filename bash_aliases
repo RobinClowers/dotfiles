@@ -1,7 +1,7 @@
 #!/bin/bash
 
-alias vi='mvim -v'
-alias vim='mvim -v'
+alias vi='nvim'
+alias vim='nvim'
 
 # ruby
 alias bi='bundle install'
