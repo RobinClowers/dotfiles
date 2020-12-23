@@ -93,7 +93,7 @@ fi
 # fancy alias for git from: https://github.com/aaronjensen/dotfiles
 function g {
   if [[ $# > 0 ]]; then
-    hub "$@"
+    git "$@"
   else
     git status -sb
   fi
