@@ -99,7 +99,7 @@ function g {
     git status -sb
   fi
 }
-complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null || complete -o default -o nospace -F _git g
+complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g 2>/dev/null || complete -o default -o nospace -F __git_wrap__git_main g
 
 function restore-vscode-extensions {
   cat vscode-extensions.list | xargs -L 1 code --install-extension
