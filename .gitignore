@@ -3,3 +3,4 @@
 config/karabiner/automatic_backups/*
 /config/direnv/allow
 /config/StardewValley
+config/nvim/bundle/neobundle.vim
