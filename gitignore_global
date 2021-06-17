@@ -8,6 +8,7 @@
 .projectile
 .tern-port
 .ignore
+.env.local
 
 # For personal settings
 .envrc
