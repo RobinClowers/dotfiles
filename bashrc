@@ -91,18 +91,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-# fancy alias for git from: https://github.com/aaronjensen/dotfiles
-function g {
-  if [[ $# > 0 ]]; then
-    git "$@"
-  else
-    git status -sb
-  fi
-}
-complete -o bashdefault -o default -o nospace -F __git_wrap__git_main g 2>/dev/null || complete -o default -o nospace -F __git_wrap__git_main g
-
-function restore-vscode-extensions {
-  cat vscode-extensions.list | xargs -L 1 code --install-extension
-}
-
+source ~/.bash_functions
 source ~/.bash_aliases
