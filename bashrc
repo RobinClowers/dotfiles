@@ -76,8 +76,8 @@ export N_PREFIX="$HOME/n"
 PATH="$N_PREFIX/bin:$PATH"
 
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
-[[ -s "$HOME/.control_services_credentials" ]] && source "$HOME/.control_services_credentials"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
+[[ -s "$HOME/.private_bash_functions" ]] && source "$HOME/.private_bash_functions"
 
 # load direnv
 eval "$(direnv hook bash)"
