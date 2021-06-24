@@ -16,7 +16,7 @@ dc() {
 }
 
 dce() {
-  COMMAND=${1}
-  SERVICE=${PWD##*/}
+  local COMMAND=${1}
+  local SERVICE=${PWD##*/}
   docker compose exec "${SERVICE}" "${COMMAND}"
 }
