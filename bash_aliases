@@ -18,6 +18,7 @@ alias deps='mix do deps.get, compile'
 
 # Fix OSX
 alias timeout='gtimeout'
+alias grep='ggrep'
 
 # Default to no wrapping for base64
 alias base64="base64 -w 0"
