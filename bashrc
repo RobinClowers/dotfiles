@@ -57,11 +57,14 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-time/libexec/gnubin:$PATH"
 
-# avoid duplicates..
+# avoid duplicates
 export HISTCONTROL=ignoredups:erasedups
 
-# append history entries..
+# append history entries
 shopt -s histappend
+
+# Make globs recursive
+shopt -s globstar
 
 # no limit on history
 export HISTSIZE=
