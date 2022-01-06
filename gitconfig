@@ -20,7 +20,7 @@
   enabled = true
 [alias]
   ci = commit
-  co = checkout
+  co = grepcheckout
   pre = pull --rebase
   st = status
   m = merge --no-ff
