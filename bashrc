@@ -36,6 +36,11 @@ export GOPATH=$HOME
 complete -o default -o nospace -F __git_flow_feature f
 complete -o default -o nospace -F __git_flow_release release
 
+# completion for my custom checkout command
+_git_grepcheckout() {
+  _git_checkout
+}
+
 # set path for homebrew
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
