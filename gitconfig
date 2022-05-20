@@ -19,6 +19,7 @@
 [rerere]
   enabled = true
 [alias]
+  ai = !git add $(git status --short | fzf -m | awk '{print $2}')
   ci = commit
   co = grepcheckout
   pre = pull --rebase
