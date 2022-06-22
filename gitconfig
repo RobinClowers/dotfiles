@@ -60,3 +60,7 @@
   diffFilter = delta --color-only
 [init]
   defaultBranch = main
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  light = false
+  file-style = bold brightgreen ul
