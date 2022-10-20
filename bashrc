@@ -90,6 +90,8 @@ PATH="$N_PREFIX/bin:$PATH"
 # load direnv
 eval "$(direnv hook bash)"
 
+source "$HOME/.cargo/env"
+
 export EDITOR='nvim'
 export GIT_EDITOR='nvim'
 export VISUAL='nvim'
