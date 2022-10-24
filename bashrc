@@ -41,8 +41,8 @@ _git_grepcheckout() {
   _git_checkout
 }
 
-# set path for homebrew
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # add Heroku Toolbelt to path
 PATH=/usr/local/heroku/bin:$PATH
@@ -79,9 +79,9 @@ export HISTFILESIZE=
 [[ -s "$HOME/.asdf/asdf.sh" ]] && source "$HOME/.asdf/asdf.sh"
 [[ -s "$HOME/.asdf/completions/asdf.bash" ]] && source "$HOME/.asdf/completions/asdf.bash"
 
-# add n, the node version manager
-export N_PREFIX="$HOME/n"
-PATH="$N_PREFIX/bin:$PATH"
+# Volta - js toolchain manager
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
@@ -90,13 +90,14 @@ PATH="$N_PREFIX/bin:$PATH"
 # load direnv
 eval "$(direnv hook bash)"
 
-source "$HOME/.cargo/env"
+[[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 export EDITOR='nvim'
 export GIT_EDITOR='nvim'
 export VISUAL='nvim'
 
 # bash completion (homebrew style)
+# "/opt/homebrew/etc/profile.d/bash_completion.sh"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
