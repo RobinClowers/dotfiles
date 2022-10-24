@@ -53,6 +53,9 @@ PATH=$HOME/bin:$PATH
 # add subscript to path
 PATH=$HOME/.subscript/bin:$PATH
 
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+
 # add imagemagick6 to path
 PATH=/usr/local/opt/imagemagick@6/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
