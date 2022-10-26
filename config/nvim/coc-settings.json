@@ -1,5 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "solargraph.formatting": true,
-  "solargraph.enable": true
+  "suggest.noselect": true
 }
