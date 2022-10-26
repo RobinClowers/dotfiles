@@ -51,6 +51,7 @@
   skip = update-index --skip-worktree
   skips = "!git ls-files -v | awk '/^S/{ print $2 }'"
   sl = show --name-status
+  sha = "!git rev-list HEAD | head -1"
   recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 [filter "lfs"]
   clean = git-lfs clean -- %f
