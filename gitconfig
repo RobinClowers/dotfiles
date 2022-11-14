@@ -68,3 +68,5 @@
   file-style = bold brightgreen ul
 [submodule]
   recurse = true
+[rebase]
+  updateRefs = true
