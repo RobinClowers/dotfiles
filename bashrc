@@ -41,8 +41,8 @@ _git_grepcheckout() {
   _git_checkout
 }
 
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Set PATH, MANPATH, etc., for Homebrew on arm64
+[[ -s /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # add Heroku Toolbelt to path
 PATH=/usr/local/heroku/bin:$PATH
