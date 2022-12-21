@@ -61,9 +61,9 @@ PATH=/usr/local/opt/imagemagick@6/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/opt/imagemagick@6/lib/pkgconfig"
 
 # add gnu stuff to the path
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/gnu-time/libexec/gnubin:$PATH"
+PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
+PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="$(brew --prefix)/opt/gnu-time/libexec/gnubin:$PATH"
 
 # avoid duplicates
 export HISTCONTROL=ignoredups:erasedups
