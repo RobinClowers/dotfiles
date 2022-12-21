@@ -1,9 +1,10 @@
-/config/configstore/
-/config/yarn/
-/config/karabiner/automatic_backups/*
-/config/direnv/allow
 /config/StardewValley
+/config/coc
+/config/configstore/
+/config/direnv/allow
+/config/karabiner/automatic_backups/*
+/config/mz
 /config/nvim/bundle/neobundle.vim
 /config/op
 /config/qcad
-/config/coc
+/config/yarn/
