@@ -71,6 +71,11 @@ export HISTFILESIZE=
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# pnpm
+export PNPM_HOME="/Users/robin/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 [[ -s "$HOME/.private_bash_functions" ]] && source "$HOME/.private_bash_functions"
