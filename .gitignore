@@ -2,6 +2,7 @@
 /config/coc
 /config/configstore/
 /config/direnv/allow
+/config/gh/hosts.yml
 /config/karabiner/automatic_backups/*
 /config/mz
 /config/nvim/bundle/neobundle.vim
