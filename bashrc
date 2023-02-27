@@ -9,13 +9,6 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=verbose
 PS1="${COLOR_RED}[${COLOR_WHITE}\t ${COLOR_NONE}\W${COLOR_GREEN}\$(__git_ps1 ' (%s)')${COLOR_RED}]${COLOR_NONE}\n\$ "
 
-# ruby optimizations
-export RUBY_GC_HEAP_INIT_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_FREE_MIN=500000
-
 # increase node memory limit
 export NODE_OPTIONS=--max-old-space-size=4096
 
@@ -29,12 +22,7 @@ function name_tab() {
 export EDITOR='vim'
 export VISUAL='vim'
 
-export CUCUMBER_FORMAT=Cucumber::Formatter::Fuubar
-export RSPEC_FORMAT=Fuubar
 export GOPATH=$HOME
-
-complete -o default -o nospace -F __git_flow_feature f
-complete -o default -o nospace -F __git_flow_release release
 
 # completion for my custom checkout command
 _git_grepcheckout() {
@@ -49,9 +37,6 @@ PATH=/usr/local/heroku/bin:$PATH
 
 # add go bin to path
 PATH=$HOME/bin:$PATH
-
-# add subscript to path
-PATH=$HOME/.subscript/bin:$PATH
 
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
