@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias ll='ls -la'
+alias ll='exa -la'
 
 alias vi='nvim'
 alias vim='nvim'
