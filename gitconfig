@@ -70,3 +70,5 @@
 	recurse = true
 [rebase]
 	updateRefs = true
+[fetch]
+	prune = true
