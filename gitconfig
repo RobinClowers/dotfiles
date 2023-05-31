@@ -42,6 +42,7 @@
 	fa = fetch --all
 	pom = push origin master
 	b = branch
+	br = for-each-ref --sort=committerdate refs/heads/ --format='%(align:30,left)%(HEAD) %(refname:short)%(end) %(color:magenta)(%(committerdate:relative))'
 	ds = diff --stat=160,120
 	dh1 = diff HEAD~1
 	sh = !git log --format=%B -n 1
@@ -52,7 +53,6 @@
 	skips = "!git ls-files -v | awk '/^S/{ print $2 }'"
 	sl = show --name-status
 	sha = "!git rev-list HEAD | head -1"
-	recent = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
