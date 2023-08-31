@@ -9,3 +9,4 @@
 /config/op
 /config/qcad
 /config/yarn/
+/config/materialize/mz.toml
