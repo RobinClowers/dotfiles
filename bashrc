@@ -83,9 +83,6 @@ export PATH="$PNPM_HOME:$PATH"
 # load direnv
 eval "$(direnv hook bash)"
 
-# https://github.com/cantino/mcfly
-eval "$(mcfly init bash)"
-
 [[ -s "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 export EDITOR='nvim'
