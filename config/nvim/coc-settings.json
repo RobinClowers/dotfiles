@@ -6,5 +6,6 @@
   "diagnostic-languageserver.filetypes": {
     "sh": "shellcheck"
   },
-  "tsserver.useLocalTsdk": true
+  "tsserver.useLocalTsdk": true,
+  "tsserver.log": "off"
 }

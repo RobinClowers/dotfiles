@@ -4,7 +4,7 @@
 /config/direnv/allow
 /config/gh/hosts.yml
 /config/karabiner/automatic_backups/*
-/config/mz
+/config/materialize
 /config/nvim/bundle/neobundle.vim
 /config/op
 /config/qcad
