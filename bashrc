@@ -19,8 +19,8 @@ function name_tab() {
   echo -ne "\033]0;$1\007"
 }
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 export GOPATH=$HOME
 
