@@ -3,10 +3,11 @@
 /config/configstore/
 /config/direnv/allow
 /config/gh/hosts.yml
+/config/graphite/user_config
 /config/karabiner/automatic_backups/*
 /config/materialize
+/config/materialize/mz.toml
 /config/nvim/bundle/neobundle.vim
 /config/op
 /config/qcad
 /config/yarn/
-/config/materialize/mz.toml
