@@ -3,6 +3,7 @@
 /config/configstore/
 /config/direnv/allow
 /config/gh/hosts.yml
+/config/github-copilot
 /config/graphite/user_config
 /config/karabiner/automatic_backups/*
 /config/materialize
