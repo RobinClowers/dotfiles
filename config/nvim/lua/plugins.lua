@@ -23,6 +23,9 @@ return {
 	"sharkdp/fd",
 	{ "nvim-treesitter/nvim-treesitter", build =  "TSUpdate" },
 	"nvim-tree/nvim-web-devicons",
+
+	-- for some reason ack doesn't work
+	-- https://github.com/mileszs/ack.vim/issues/156
 	"mileszs/ack.vim",
 
 	-- Kills a buffer without closing a split, use ,w
