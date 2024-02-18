@@ -22,6 +22,4 @@ require("onedark").setup  {
     ["@variable.parameter"] = {fg = "$cyan"},
   }, -- Override highlight groups
 }
-
-
 require("onedark").load()
