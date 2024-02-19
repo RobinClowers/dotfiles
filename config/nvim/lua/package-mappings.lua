@@ -1,5 +1,3 @@
-local exec = vim.api.nvim_exec -- execute Vimscript
-local autocmd = vim.api.nvim_create_autocmd -- execute autocommands
 local map = vim.api.nvim_set_keymap -- create mapping
 
 -- Telescope
