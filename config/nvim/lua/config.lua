@@ -89,3 +89,7 @@ set.winwidth = 84
 set.winheight = 5
 set.winminheight = 5
 set.winheight = 999
+
+-- Ack for seaching, the ackprg variable has to be set before ack loads
+-- Use ripgrep instead of ack
+vim.g.ackprg = 'rg --vimgrep --smart-case --hidden --ignore-file="$HOME/.rgignore"'
