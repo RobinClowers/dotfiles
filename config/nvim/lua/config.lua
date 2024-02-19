@@ -1,6 +1,4 @@
--- local api = vim.api -- neovim commands
 local set = vim.opt -- global options
--- local cmd = vim.cmd -- execute Vim commands
 
 -- Backups and swap
 set.backup = false
@@ -42,13 +40,6 @@ set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
 
--- Completion
--- set.wildmode = "longest,list"
--- set wildmenu
--- set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,public/javascripts/compiled
--- set wildignore+=tmp,*.orig,*.jpg,*.png,*.gif,log,solr,.sass-cache,.jhw-cache
--- set wildignore+=bundler_stubs,build,error_pages,bundle,build,error_pages
-
 -- Status bar
 set.laststatus = 2
 
@@ -67,14 +58,15 @@ set.splitbelow = true
 set.splitright = true
 
 -- Performance optimizations
--- syntax sync minlines=256
+set.lazyredraw = true
+vim.api.nvim_command("syntax sync minlines=256")
 
 -- Show 2 lines of context
 set.scrolloff = 2
 
 -- don't delay when you hit esc in terminal vim, this may make arrow keys not
 -- work well when ssh'd in
--- set.ttimeoutlen = 5
+set.ttimeoutlen = 5
 
 -- Persistent undo
 set.undofile = true
@@ -88,9 +80,7 @@ set.foldnestmax = 10
 set.foldenable = false
 set.foldlevel = 2
 
--- set.g.expandWindows = 1
-
--- Make the window we're on as big as it makes sense to make it
+-- Make the current window take up most of the screen
 set.winwidth = 84
 
 -- We have to have a winheight bigger than we want to set winminheight. But if
