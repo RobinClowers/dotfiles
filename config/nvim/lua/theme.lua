@@ -1,6 +1,8 @@
 require("onedark").setup  {
   -- Main options --
-  style = "darker", -- Default theme style. Choose between "dark", "darker", "cool", "deep", "warm", "warmer" and "light"
+  -- Default theme style.
+  -- Choose between "dark", "darker", "cool", "deep", "warm", "warmer" and "light"
+  style = "darker",
 
   -- Custom Highlights --
   colors = {
