@@ -1,4 +1,6 @@
-require("onedark").setup  {
+local onedark = require("onedark")
+
+onedark.setup({
   -- Main options --
   -- Default theme style.
   -- Choose between "dark", "darker", "cool", "deep", "warm", "warmer" and "light"
@@ -23,5 +25,9 @@ require("onedark").setup  {
     ["@type"] = {fg = "$green"},
     ["@variable.parameter"] = {fg = "$cyan"},
   }, -- Override highlight groups
-}
-require("onedark").load()
+})
+onedark.load()
+
+-- this theme works fine with the coc floating window selection
+-- so there must be some color I need to change for onedark to work?
+-- vim.cmd 'colo juliana'

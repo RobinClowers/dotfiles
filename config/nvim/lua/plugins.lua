@@ -42,6 +42,8 @@ return {
 	"tpope/vim-eunuch",
 
 	"navarasu/onedark.nvim",
+	-- TODO Remove
+	"kaiuri/nvim-juliana",
 
 	-- makes the command line and insert mode behave like emacs
 	"tpope/vim-rsi",
