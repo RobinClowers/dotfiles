@@ -25,6 +25,6 @@ autocmd("BufEnter", {
 autocmd("FileType", {
   pattern = "netrw",
   callback = function()
-    vim.api.nvim_buf_set_keymap(0, 'n', '<leader>w', ":bwipeout<CR>", { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(0, '', '<leader>w', ":bwipeout<CR>", { noremap = true, silent = true })
   end
 })

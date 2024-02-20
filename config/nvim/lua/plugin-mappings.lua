@@ -8,14 +8,14 @@ map('n', '<leader>b', builtin.buffers)
 map('n', '<leader>h', builtin.help_tags)
 
 -- Ack plugin
-map('n', '<leader>a', ":Ack!<space>")
-map('n', '<leader>A', ":Ack! <C-R><C-W><CR>")
+map('', '<leader>a', ":Ack!<space>")
+map('', '<leader>A', ":Ack! <C-R><C-W><CR>")
 
 -- Fugitive
-map('n', '<leader>gs', ':Git<CR>')
-map('n', '<leader>gc', ':Git commit<CR>')
-map('n', '<leader>ga', ':Git add --all<CR>:Gcommit<CR>')
-map('n', '<leader>gb', ':Git blame<CR>')
+map('', '<leader>gs', ':Git<CR>')
+map('', '<leader>gc', ':Git commit<CR>')
+map('', '<leader>ga', ':Git add --all<CR>:Gcommit<CR>')
+map('', '<leader>gb', ':Git blame<CR>')
 
 -- vim-command-w
 map('n', '<leader>w', ':CommandW<CR>')
