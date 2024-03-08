@@ -9,6 +9,11 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=verbose
 PS1="${COLOR_RED}[${COLOR_WHITE}\t ${COLOR_NONE}\W${COLOR_GREEN}\$(__git_ps1 ' (%s)')${COLOR_RED}]${COLOR_NONE}\n\$ "
 
+# Less settings
+# --ignore-case is actually smart case, only ignores for lower case searches
+# --chop-long-lines makes long lines scroll instead of wrapping
+export LESS="--ignore-case --chop-long-lines"
+
 # increase node memory limit
 export NODE_OPTIONS=--max-old-space-size=4096
 
