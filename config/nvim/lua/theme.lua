@@ -1,4 +1,6 @@
-require("onedark").setup  {
+local onedark = require("onedark")
+
+onedark.setup({
   -- Main options --
   -- Default theme style.
   -- Choose between "dark", "darker", "cool", "deep", "warm", "warmer" and "light"
@@ -22,6 +24,7 @@ require("onedark").setup  {
     ["@tag.delimiter"] =  {fg = "$grey" },
     ["@type"] = {fg = "$green"},
     ["@variable.parameter"] = {fg = "$cyan"},
+    ["CocMenuSel"] = {bg = "$dark_cyan" },
   }, -- Override highlight groups
-}
-require("onedark").load()
+})
+onedark.load()
