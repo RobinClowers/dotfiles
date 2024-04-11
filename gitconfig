@@ -17,6 +17,7 @@
 [push]
 	default = upstream
 	autoSetupRemote = true
+	recurseSubmodules = check
 [rerere]
 	enabled = true
 [alias]
