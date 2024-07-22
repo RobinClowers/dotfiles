@@ -81,6 +81,10 @@ export PNPM_HOME="/Users/robin/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+# Prefer brew llvm
+# https://github.com/rustwasm/wasm-pack/issues/1381
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
 [[ -s "$HOME/.amazon_keys" ]] && source "$HOME/.amazon_keys"
 [[ -s "$HOME/.photo_gallery_facebook_secret" ]] && source "$HOME/.photo_gallery_facebook_secret"
 [[ -s "$HOME/.private_bash_functions" ]] && source "$HOME/.private_bash_functions"
