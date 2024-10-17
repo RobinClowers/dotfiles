@@ -21,7 +21,7 @@ return {
 	-- Optional Telescope dependencies
 	-- "nvim-telescope/telescope-fzf-native.nvim", { "do": "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build" }
 	"sharkdp/fd",
-	{ "nvim-treesitter/nvim-treesitter", build =  "TSUpdate" },
+	{ "nvim-treesitter/nvim-treesitter", build =  ":TSUpdate" },
 	"nvim-tree/nvim-web-devicons",
 
 	-- for some reason ack doesn't work
