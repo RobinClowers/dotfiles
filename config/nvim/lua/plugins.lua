@@ -78,7 +78,4 @@ return {
 
 	-- LSP completion, linting, formatting and more
 	{ "neoclide/coc.nvim",  branch = "release" },
-
-	-- Github copilot in pure lua
-	"zbirenbaum/copilot.lua",
 }
