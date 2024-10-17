@@ -78,4 +78,7 @@ return {
 
 	-- LSP completion, linting, formatting and more
 	{ "neoclide/coc.nvim",  branch = "release" },
+
+	-- Edit files that require sudo
+	"lumbric/suda.vim",
 }

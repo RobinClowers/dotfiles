@@ -93,3 +93,6 @@ set.winheight = 999
 -- Ack for seaching, the ackprg variable has to be set before ack loads
 -- Use ripgrep instead of ack
 vim.g.ackprg = 'rg --vimgrep --smart-case --hidden --ignore-file="$HOME/.rgignore"'
+
+-- suda smart edit mode automatically handles writing to files that require sudo
+vim.g.suda_smart_edit = 1
