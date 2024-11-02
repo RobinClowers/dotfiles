@@ -1012,6 +1012,14 @@
                 {
                     "from": { "key_code": "right_command" },
                     "to": [{ "key_code": "right_option" }]
+                },
+                {
+                    "from": { "pointing_button": "button3" },
+                    "to": [{ "consumer_key_code": "scan_previous_track" }]
+                },
+                {
+                    "from": { "pointing_button": "button4" },
+                    "to": [{ "consumer_key_code": "scan_next_track" }]
                 }
             ],
             "standalone_keys": { "caps_lock": "escape" },
