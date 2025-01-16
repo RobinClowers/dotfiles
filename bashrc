@@ -73,11 +73,9 @@ export HISTFILESIZE=
 [[ -s "$HOME/.asdf/completions/asdf.bash" ]] && source "$HOME/.asdf/completions/asdf.bash"
 
 # Volta - js toolchain manager
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/robin/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
@@ -104,8 +102,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-# Rustup setup
-. "$HOME/.cargo/env"
-
 source ~/.bash_functions
 source ~/.bash_aliases
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

@@ -3,7 +3,7 @@
   "coc.nvim": { "branch": "release", "commit": "57d488a06bdb34de89acef3c2f3e9ce609d632ed" },
   "fd": { "branch": "master", "commit": "7a908a474cbcb3f37a4e6407a30d81bf85106217" },
   "fzf.vim": { "branch": "master", "commit": "556f45e79ae5e3970054fee4c4373472604a1b4e" },
-  "lazy.nvim": { "branch": "main", "commit": "56ead98e05bb37a4ec28930a54d836d033cf00f2" },
+  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
   "nvim-treesitter": { "branch": "master", "commit": "8a74ac9aead72ef7a870908f1517b48f2bb25ac7" },
   "nvim-web-devicons": { "branch": "master", "commit": "e87554285f581047b1bf236794b0eb812b444b87" },
   "onedark.nvim": { "branch": "master", "commit": "67a74c275d1116d575ab25485d1bfa6b2a9c38a6" },
