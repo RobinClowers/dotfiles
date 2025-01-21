@@ -2,6 +2,7 @@
 /config/coc
 /config/configstore/
 /config/direnv/allow
+/config/gcloud/
 /config/gh/hosts.yml
 /config/github-copilot
 /config/graphite/user_config
