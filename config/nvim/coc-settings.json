@@ -6,6 +6,7 @@
   "diagnostic-languageserver.filetypes": {
     "sh": "shellcheck"
   },
-  "tsserver.useLocalTsdk": true,
-  "tsserver.log": "off"
+  "prettier.requireConfig": true,
+  "tsserver.log": "off",
+  "tsserver.useLocalTsdk": true
 }
