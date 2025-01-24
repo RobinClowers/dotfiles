@@ -112,3 +112,9 @@ if [ -f '/Users/robin/google-cloud-sdk/path.bash.inc' ]; then . '/Users/robin/go
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/robin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/robin/google-cloud-sdk/completion.bash.inc'; fi
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+. "$HOME/.local/bin/env"
