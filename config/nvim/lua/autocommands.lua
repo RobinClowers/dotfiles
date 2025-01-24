@@ -1,15 +1,5 @@
 local autocmd = vim.api.nvim_create_autocmd -- execute autocommands
 
--- Remove trailing whitespace
-autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function()
-    local save = vim.fn.winsaveview()
-    vim.cmd([[%s/\s\+$//e]])
-    vim.fn.winrestview(save)
-  end
-})
-
 -- Start in insert mode for commit
 autocmd("BufEnter", {
   pattern = "*.git/COMMIT_EDITMSG",
