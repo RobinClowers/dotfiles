@@ -7,6 +7,7 @@
     "sh": "shellcheck"
   },
   "prettier.requireConfig": true,
+  "prettier.enable": false,
   "tsserver.log": "off",
   "tsserver.useLocalTsdk": true
 }
