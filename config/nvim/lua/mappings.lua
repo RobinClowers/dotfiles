@@ -4,6 +4,11 @@ local map = vim.keymap.set -- create mapping
 -- Command mode: %%
 map('c', '%%', '<C-R>=expand("%:p:h") . "/"<CR>')
 
+-- Copy relative path to clipboard
+map('n', '<leader>yp', function() vim.fn.setreg('+', vim.fn.expand('%')) end)
+-- Copy full path to clipboard
+map('n', '<leader>yfp', function() vim.fn.setreg('+', vim.fn.expand('%:p')) end)
+
 -- map quick quit
 -- map <leader>qq :qa!<cr>
 map('n', '<leader>qq', ':qa!<CR>')
@@ -41,3 +46,4 @@ map('v', 'K', ":m '<-2<CR>gv=gv", { noremap = true })
 
 -- Replace the current find expression
 map('', '<leader>r', ':%s/<C-r>//')
+
