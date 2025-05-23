@@ -117,4 +117,7 @@ if [ -f '/Users/robin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ro
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# Windsurf
+export PATH="/Users/robin/.codeium/windsurf/bin:$PATH"
+
 . "$HOME/.local/bin/env"
