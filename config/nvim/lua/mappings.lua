@@ -4,11 +4,6 @@ local map = vim.keymap.set -- create mapping
 -- Command mode: %%
 map('c', '%%', '<C-R>=expand("%:p:h") . "/"<CR>')
 
--- Copy relative path to clipboard
-map('n', '<leader>yp', function() vim.fn.setreg('+', vim.fn.expand('%')) end)
--- Copy full path to clipboard
-map('n', '<leader>yfp', function() vim.fn.setreg('+', vim.fn.expand('%:p')) end)
-
 -- map quick quit
 -- map <leader>qq :qa!<cr>
 map('n', '<leader>qq', ':qa!<CR>')
@@ -16,23 +11,6 @@ map('n', '<leader>qq', ':qa!<CR>')
 -- Create the current directory
 -- nmap <leader>md :silent !mkdir -p %:h<CR>:redraw!<CR>
 map('n', '<leader>md', ':silent !mkdir -p %:h<CR>:redraw!<CR>')
-
--- do I care about this?
--- function! SaveIfModified()
---   if &modified
---     :w
---   endif
--- endfunction
---
--- nmap <leader>rr :redraw!<CR>
---
--- -- key mapping for error navigation
--- nmap <leader>[ :call SaveIfModified()<CR>:cprev<CR>
--- nmap <leader>] :call SaveIfModified()<CR>:cnext<CR>
-
--- key mapping for ; and , since they do other things now and I don't use marks
--- nnoremap m ;
--- nnoremap M ,
 
 -- Copy paste system clipboard
 map('', '<leader>y', '"*y')
@@ -47,3 +25,26 @@ map('v', 'K', ":m '<-2<CR>gv=gv", { noremap = true })
 -- Replace the current find expression
 map('', '<leader>r', ':%s/<C-r>//')
 
+
+local function copy_filepath_and_lines()
+  local filepath = vim.fn.expand('%:p')
+  local start_line = vim.fn.line("'<")
+  local end_line = vim.fn.line("'>")
+
+  local result
+  if start_line == end_line then
+      result = filepath .. ':' .. start_line
+  else
+      result = filepath .. ':' .. start_line .. '-' .. end_line
+  end
+
+  vim.fn.setreg('+', result)
+  print('Copied: ' .. result)
+end
+
+-- Copy relative path to clipboard
+map('n', '<leader>yp', function() vim.fn.setreg('+', vim.fn.expand('%')) end)
+-- Copy full path to clipboard
+map('n', '<leader>yfp', function() vim.fn.setreg('+', vim.fn.expand('%:p')) end)
+-- Copy path and line number(s)
+vim.keymap.set('v', '<leader>ys', copy_filepath_and_lines, { desc = 'Copy filepath and line numbers' })
