@@ -40,11 +40,12 @@ local function copy_filepath_and_lines()
 
   vim.fn.setreg('+', result)
   print('Copied: ' .. result)
+  vim.cmd('normal! v')
 end
 
 -- Copy relative path to clipboard
 map('n', '<leader>yp', function() vim.fn.setreg('+', vim.fn.expand('%')) end)
 -- Copy full path to clipboard
 map('n', '<leader>yfp', function() vim.fn.setreg('+', vim.fn.expand('%:p')) end)
--- Copy path and line number(s)
-vim.keymap.set('v', '<leader>ys', copy_filepath_and_lines, { desc = 'Copy filepath and line numbers' })
+-- yank selection: Copy path and line number(s)
+vim.keymap.set('v', '<leader>s', copy_filepath_and_lines, { desc = 'Copy filepath and line numbers' })
