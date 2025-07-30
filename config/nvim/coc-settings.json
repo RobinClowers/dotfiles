@@ -1,5 +1,7 @@
 {
   "coc.preferences.formatOnSave": true,
+  "biome.enable": true,
+  "biome.bin": "/Users/robin/.bun/bin/biome",
   "solargraph.formatting": true,
   "suggest.noselect": true,
   "python.formatting.provider": "black",

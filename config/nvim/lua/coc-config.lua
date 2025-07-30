@@ -191,4 +191,5 @@ vim.g.coc_global_extensions = {
   'coc-rust-analyzer',
   'coc-solargraph',
   'coc-tsserver',
+  'coc-biome',
 }
