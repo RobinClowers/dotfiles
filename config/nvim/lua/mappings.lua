@@ -39,8 +39,8 @@ local function copy_filepath_and_lines()
   end
 
   vim.fn.setreg('+', result)
+  vim.api.nvim_input('<Esc>')
   print('Copied: ' .. result)
-  vim.cmd('normal! v')
 end
 
 -- Copy relative path to clipboard
