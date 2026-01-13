@@ -5,7 +5,6 @@
   "css.lint.unknownAtRules": "ignore",
   "solargraph.formatting": true,
   "suggest.noselect": true,
-  "python.formatting.provider": "black",
   "diagnostic-languageserver.filetypes": {
     "sh": "shellcheck"
   },

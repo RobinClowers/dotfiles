@@ -187,7 +187,7 @@ vim.g.coc_global_extensions = {
   'coc-html',
   'coc-json',
   'coc-prettier',
-  'coc-pyright',
+  '@yaegassy/coc-ty',
   'coc-rust-analyzer',
   'coc-solargraph',
   'coc-tsserver',
