@@ -27,9 +27,12 @@ map('', '<leader>r', ':%s/<C-r>//')
 
 
 local function copy_filepath_and_lines()
-  local filepath = vim.fn.expand('%:p')
-  local start_line = vim.fn.line("'<")
-  local end_line = vim.fn.line("'>")
+  local filepath = vim.fn.expand('%:.')
+  local start_line = vim.fn.line("v")
+  local end_line = vim.fn.line(".")
+  if start_line > end_line then
+    start_line, end_line = end_line, start_line
+  end
 
   local result
   if start_line == end_line then
