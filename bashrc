@@ -121,3 +121,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/robin/.codeium/windsurf/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/robin/.local/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/robin/.antigravity/antigravity/bin:$PATH"
