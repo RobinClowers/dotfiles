@@ -73,3 +73,5 @@
 	updateRefs = true
 [fetch]
 	prune = true
+[include]
+	path = ~/.gitconfig.local
