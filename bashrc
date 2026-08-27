@@ -122,3 +122,6 @@ export PATH="/Users/robin/.local/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/robin/.antigravity/antigravity/bin:$PATH"
+
+# gcloud plugins in the path
+export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
