@@ -55,6 +55,9 @@ PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="$(brew --prefix)/opt/gnu-time/libexec/gnubin:$PATH"
 
+# local bin dir for Claude Code
+export PATH="$HOME/.local/bin:$PATH"
+
 # avoid duplicates
 export HISTCONTROL=ignoredups:erasedups
 
