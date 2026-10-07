@@ -11,5 +11,9 @@
   "prettier.requireConfig": true,
   "prettier.enable": false,
   "tsserver.log": "off",
-  "tsserver.useLocalTsdk": true
+  "tsserver.useLocalTsdk": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://www.schemastore.org": true,
+    "https://json.schemastore.org": true
+  }
 }
