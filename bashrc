@@ -128,3 +128,6 @@ export PATH="/Users/robin/.antigravity/antigravity/bin:$PATH"
 
 # gcloud plugins in the path
 export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
+
+# Docker cli
+export PATH="$HOME/.docker/bin:$PATH"
