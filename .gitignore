@@ -1,9 +1,10 @@
+/config/1Password
 /config/StardewValley
+/config/baseten_dev
 /config/cagent
 /config/coc
 /config/configstore
 /config/direnv/allow
-/config/1Password
 /config/gcloud/
 /config/gh/hosts.yml
 /config/github-copilot
