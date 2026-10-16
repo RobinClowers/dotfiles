@@ -17,6 +17,7 @@
 /config/op
 /config/opencode
 /config/qcad
+/config/sentry
 /config/stripe
 /config/uv
 /config/yarn
