@@ -41,6 +41,7 @@
 	la = !git l --all
 	div = divergence
 	fa = fetch --all
+	cb = "!f() { bash -c 'source ~/dotfiles/bash_functions; git_prune_branches \"$@\"' -- \"$@\"; }; f"
 	pom = push origin master
 	b = branch
 	br = for-each-ref --sort=committerdate refs/heads/ --format='%(align:30,left)%(HEAD) %(refname:short)%(end) %(color:magenta)(%(committerdate:relative))'
