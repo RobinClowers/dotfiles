@@ -45,8 +45,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -100,8 +99,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -155,8 +153,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -255,8 +252,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -310,8 +306,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -365,8 +360,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -420,8 +414,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -475,8 +468,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -672,8 +664,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -727,8 +718,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -787,8 +777,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -847,8 +836,7 @@
                                             "^org\\.macosforge\\.xquartz\\.X11$",
                                             "^org\\.macports\\.X11$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com.todesktop.230313mzl4w4u92$",
-                                            "^com.exafunction.windsurf$"
+                                            "^com\\.superlogical\\.rex$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
