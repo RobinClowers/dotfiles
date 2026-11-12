@@ -1,9 +1,10 @@
 /config/1Password
 /config/StardewValley
-/config/baseten_dev
 /config/baseten-switch
+/config/baseten_dev
 /config/cagent
 /config/coc
+/config/codex
 /config/configstore
 /config/direnv/allow
 /config/gcloud/
